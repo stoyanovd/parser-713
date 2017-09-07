@@ -4,6 +4,8 @@ from telegram.ext import Updater, CommandHandler
 import logging
 from telegram.ext import MessageHandler, Filters
 
+from tgbot.worker import goes
+
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
@@ -13,8 +15,11 @@ def start(bot, update):
 
 
 def hello(bot, update):
-    update.message.reply_text(
-        'Hello {}'.format(update.message.from_user.first_name))
+    # update.message.reply_text(
+    #     'Hello {}'.format(update.message.from_user.first_name))
+    t = goes()
+    update.message.reply_text(t)
+
     # update.message
 
 
