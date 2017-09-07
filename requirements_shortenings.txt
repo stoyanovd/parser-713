@@ -1,0 +1,9 @@
+# default server
+
+python-telegram-bot
+
+
+###
+requests[security]
+certifi
+
