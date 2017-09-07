@@ -7,3 +7,6 @@ pyyaml
 requests[security]
 certifi
 
+###
+
+splinter

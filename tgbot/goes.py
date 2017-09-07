@@ -29,7 +29,7 @@ def echo(bot, update):
 #################################################
 from yaml import load, dump
 
-env_file = os.path.exists('.env.yaml')
+env_file = '.env.yaml'
 
 token_str = 'TELEGRAM_BOT_TOKEN'
 
