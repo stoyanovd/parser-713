@@ -62,13 +62,13 @@ dispatcher.add_handler(MessageHandler(Filters.text, echo))
 
 print("finish set up bot.")
 
-updater.start_webhook(listen="0.0.0.0",
-                      port=PORT,
-                      url_path="" + TOKEN)
-updater.bot.set_webhook("https://parser-713.herokuapp.com/" + TOKEN)
+# updater.start_webhook(listen="0.0.0.0",
+#                       port=PORT,
+#                       url_path="" + TOKEN)
+# updater.bot.set_webhook("https://parser-713.herokuapp.com/" + TOKEN)
 
 # time to try webhooks
-# updater.start_polling()
+updater.start_polling()
 
 print("before idle")
 updater.idle()

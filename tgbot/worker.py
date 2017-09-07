@@ -1,7 +1,9 @@
 from splinter import Browser
 
+from tgbot.chrome import get_chrome
 
 def goes():
+    browser = get_chrome()
     with Browser() as browser:
         # Visit URL
         url = "https://bankrot.fedresurs.ru/Messages.aspx"
