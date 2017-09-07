@@ -27,8 +27,18 @@ def echo(bot, update):
 
 
 #################################################
+from yaml import load, dump
+
+env_file = os.path.exists('.env.yaml')
 
 token_str = 'TELEGRAM_BOT_TOKEN'
+
+if os.path.exists(env_file):
+    with open(env_file, 'r') as f:
+        data = load(f)
+        assert token_str in data.keys()
+        os.environ[token_str] = data[token_str]
+
 assert token_str in os.environ.keys()
 
 TOKEN = os.environ.get(token_str)
