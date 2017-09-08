@@ -5,6 +5,7 @@ from tgbot.chrome import get_chrome
 
 def run_browser():
     browser = get_chrome()
+    # browser = Browser('firefox', headless=True)
     # with Browser() as browser:
 
     # Visit URL
