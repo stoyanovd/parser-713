@@ -7,6 +7,7 @@ def run_browser():
     browser = get_chrome()
     # browser = Browser('firefox', headless=True)
     # with Browser() as browser:
+    # with Browser() as browser:
 
     # Visit URL
     url = "https://bankrot.fedresurs.ru/Messages.aspx"
