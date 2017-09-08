@@ -4,6 +4,10 @@ from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
+# buildpacks for Heroku:
+# https://github.com/heroku/heroku-buildpack-xvfb-google-chrome
+# https://github.com/heroku/heroku-buildpack-chromedriver
+
 def get_chrome():
     chrome_options = Options()
     chrome_options.binary_location = os.environ['GOOGLE_CHROME_BIN']
