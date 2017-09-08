@@ -20,8 +20,6 @@ def hello(bot, update):
     t = run_browser()
     update.message.reply_text(t)
 
-    # update.message
-
 
 def echo(bot, update):
     # global d

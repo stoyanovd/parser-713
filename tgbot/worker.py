@@ -6,7 +6,7 @@ from tgbot.chrome import get_chrome
 def run_browser():
     browser = get_chrome()
     # with Browser() as browser:
-    
+
     # Visit URL
     url = "https://bankrot.fedresurs.ru/Messages.aspx"
     browser.visit(url)
