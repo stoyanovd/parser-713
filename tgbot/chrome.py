@@ -5,8 +5,13 @@ from selenium.webdriver.chrome.options import Options
 
 
 # buildpacks for Heroku:
-# https://github.com/heroku/heroku-buildpack-xvfb-google-chrome
 # https://github.com/heroku/heroku-buildpack-chromedriver
+
+# normal mode
+# https://github.com/heroku/heroku-buildpack-xvfb-google-chrome
+
+# headless mode
+# https://github.com/heroku/heroku-buildpack-google-chrome
 
 def get_chrome():
     chrome_options = Options()
