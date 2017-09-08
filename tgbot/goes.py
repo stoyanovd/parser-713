@@ -17,7 +17,7 @@ def start(bot, update):
 def hello(bot, update):
     # update.message.reply_text(
     #     'Hello {}'.format(update.message.from_user.first_name))
-    t = goes()
+    t = run_browser()
     update.message.reply_text(t)
 
     # update.message
