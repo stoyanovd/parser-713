@@ -2,7 +2,7 @@ from splinter import Browser
 
 from tgbot.chrome import get_chrome
 
-def goes():
+def run_browser():
     browser = get_chrome()
     with Browser() as browser:
         # Visit URL

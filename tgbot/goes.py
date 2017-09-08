@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler
 import logging
 from telegram.ext import MessageHandler, Filters
 
-from tgbot.worker import goes
+from tgbot.worker import run_browser
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
