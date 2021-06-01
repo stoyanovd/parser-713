@@ -13,4 +13,4 @@ requests==2.18.4
 selenium==3.5.0
 six==1.10.0
 splinter==0.7.6
-urllib3==1.22
+urllib3==1.26.5
